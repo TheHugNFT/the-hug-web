@@ -42,7 +42,7 @@ import SocialIcons from '../siteComponents/SocialIcons';
 import Para from "../components/Para";
 import {FaExternalLinkAlt} from "react-icons/fa";
 
-export default function EmbraceHome({Component}) {
+export default function EmbraceHome() {
     const [walletAddress, setWalletAddress] = useState('');
     const [status, setStatus] = useState('');
     const [error, setError] = useState('');

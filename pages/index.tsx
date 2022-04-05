@@ -7,15 +7,7 @@ import Date from '../components/date'
 import { GetStaticProps } from 'next'
 import EmbraceHome from '../old/pages/EmbraceHome'
 
-export default function Home({
-  allPostsData
-}: {
-  allPostsData: {
-    date: string
-    title: string
-    id: string
-  }[]
-}) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
@@ -26,11 +18,11 @@ export default function Home({
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
+// export const getStaticProps: GetStaticProps = async () => {
+//   const allPostsData = getSortedPostsData()
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   }
+// }
