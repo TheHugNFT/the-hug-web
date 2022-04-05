@@ -10,7 +10,7 @@ export default function About() {
             <Image src={'/TheHugNFTlogo.png'} maxWidth={'400'} alignSelf="center"/>
 
             <Heading size="l" fontSize={'24px'} pb={2} pt={-4}>
-                friendship NFT. Buy one and get a free one to send to a friend.
+                The Friendship NFT. Buy one and get a free one to send to a friend.
             </Heading>
 
             <Heading size="l" fontSize={'18px'} mb={-2}>
