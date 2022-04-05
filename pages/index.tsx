@@ -5,7 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
-import EmbraceHome from '../old/pages/EmbraceHome'
+import EmbraceHome from '../website-config/EmbraceHome'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-       <EmbraceHome />
+       <EmbraceHome/>
     </Layout>
   )
 }

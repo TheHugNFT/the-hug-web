@@ -23,24 +23,27 @@ import {
     Avatar,
 } from '@chakra-ui/react';
 import {Stack, HStack, VStack} from '@chakra-ui/react';
-import Section from '../components/Section';
-import NuggetBox from '../components/NuggetBox';
-import TeamMember from '../siteComponents/TeamMember';
-import CheckList from '../components/CheckList';
-import {spacingStack} from '../config/commonProps';
-import SiteFooter from '../siteComponents/SiteFooter';
-import FaqAccordion from '../components/FaqAccordion';
-import {ColorModeSwitcher} from '../ColorModeSwitcher';
+import Section from './components/Section';
+import NuggetBox from './components/NuggetBox';
+import TeamMember from './TeamMember';
+import CheckList from './components/CheckList';
+import {spacingStack} from './config/commonProps';
+import SiteFooter from './SiteFooter';
+import FaqAccordion from './components/FaqAccordion';
+import {ColorModeSwitcher} from './ColorModeSwitcher';
 import {
     connectWallet,
     getCurrentWalletConnected,
     addPolygonChain,
-} from '../helpers/wallet';
-import {mintNFT} from '../helpers/interact';
+} from './helpers/wallet';
+import {mintNFT} from './helpers/interact';
 import {SocialIcon} from 'react-social-icons';
-import SocialIcons from '../siteComponents/SocialIcons';
-import Para from "../components/Para";
+import SocialIcons from './SocialIcons';
+import Para from "./components/Para";
 import {FaExternalLinkAlt} from "react-icons/fa";
+import TeamMembers from "./TeamMembers";
+import Features from "./Features";
+import About from "./About";
 
 export default function EmbraceHome() {
     const [walletAddress, setWalletAddress] = useState('');
@@ -174,42 +177,9 @@ export default function EmbraceHome() {
                     {/*  // borderRadius={'full'}*/}
                     {/*  p={3}*/}
                     {/*/>*/}
-                    <Stack {...spacingStack} flex={'70%'} minWidth={'300px'} pl={2}>
-                        <Stack textAlign={'center'} alignSelf="center" maxWidth={'600px'}>
 
-                            <Image src={'/TheHugNFTlogo.png'} maxWidth={'400'} alignSelf="center"/>
+                    <About />
 
-                            <Heading size="l" fontSize={'24px'} pb={2} pt={-4}>A friendship NFT. Buy one and get a free
-                                one to
-                                send to a friend. </Heading>
-
-                            <Heading size="l" fontSize={'18px'} mb={-2}>
-                                Our Cause: Educating and Creating Authentic Community. <br/>
-                                Our Mission: To send a Hug to each address on the Polygon network.
-                            </Heading>
-
-                        </Stack>
-                        <Text fontSize="l" mt="-5px">
-                            <Para fontSize="l">
-                                Hugs are symbolic of friendship and love and meet human needs in a variety of ways. Now
-                                more than ever, hugs are important. When you give The
-                                Hug NFT, you are not only giving a hug but also empowering an
-                                individual in crypto financial education.
-                            </Para>
-                            <Para>
-                                The Hug NFT, #thefriendshipnft, empowers individuals to create a working knowledge
-                                base of cryptocurrencies, wallets, blockchains, NFT’s, and DAO’s
-                                by sending an NFT Hug on the Polygon network which has
-                                minimal gas (transaction) fees while spreading friendship and joy
-                                via a blockchain hug.
-                            </Para>
-                            {/*<Para>*/}
-                            {/*    Wow… That’s a mouthful. You will create your very own hug nft and one for a friend.*/}
-                            {/*</Para>*/}
-
-                        </Text>
-
-                    </Stack>
                 </Flex>
             </Section>
 
@@ -222,57 +192,7 @@ export default function EmbraceHome() {
             </SimpleGrid>
 
             <Section>
-                <SimpleGrid columns={[2, 2, 3]} spacing={2} mt={5} px={2}>
-                    {/*<NuggetBox>*/}
-                    {/*    <Text fontSize="l">*/}
-                    {/*    </Text>*/}
-                    {/*</NuggetBox>*/}
-                    {/*<NuggetBox>*/}
-
-                    {/*</NuggetBox>*/}
-                    <NuggetBox noCenter>
-                        <Text fontSize="l">
-                            <Para textAlign={'center'}>
-                                <b>What makes our project different:</b>
-                            </Para>
-                            <p>
-                                1. We’re using Polygon for low gas fees.
-                            </p>
-                            {/*<p> 2. We have a unique way of growing our community by using a “share to mint” concept.*/}
-                            {/*</p>*/}
-                            <p> 2. Our NFTs are about friendship and sharing.
-                            </p>
-                            <p>
-                                3. Our NFTs will change over time, kind of like a chronicle of the journey of two
-                                friends.
-                            </p>
-                        </Text>
-                    </NuggetBox>
-                    <NuggetBox>
-                        <Text fontSize="l">
-                            <Para>
-                                <b>Layered On-chain Generative Art. </b>
-                            </Para>
-                            The Hug NFTs are generated by combining different unique elements,
-                            for example, different types of people, different clothes,
-                            different colors and patterns, settings and backgrounds. The NFTs
-                            are generative art with unpredictable randomness.
-                            When you press the "mint" button YOU are creating a unique piece of art via a blockchain
-                            smart contract.
-                            {/*The unique elements of the Hug NFTs are mixed and matched by the blockchain, */}
-                            {/*just like our collection of friends are created in real life!*/}
-                        </Text>
-                    </NuggetBox>
-                    <NuggetBox>
-                        <Text fontSize="l">
-                            <Para>
-                                <b>Sending love on-chain</b>
-                            </Para>
-                            Remember the joy of receiving a friendship card in the mail? The
-                            Hug NFT strives to bring this same experience to the web 3.0
-                        </Text>
-                    </NuggetBox>
-                </SimpleGrid>
+               <Features />
             </Section>
 
             <Section>
@@ -404,29 +324,7 @@ export default function EmbraceHome() {
             </Section>
 
             <Section withStack pt="2vw">
-                <Heading size="xl" id="team">
-                    Team
-                </Heading>
-                <SimpleGrid columns={[2, null, 3]} spacing={5}>
-                    <TeamMember
-                        name="Otto"
-                        title="Developer and CEO"
-                        src="/profile_otto.PNG"
-                        bio="I transform the world with creativity through technology and love."
-                    />
-                    <TeamMember
-                        name="Joele"
-                        title="Investor Relations, Marketing"
-                        // I learned how to drive on a manual transmission.
-                        bio="I create empowerment for others. Besides empowering teenagers in Science and Math, my favorite subject, Embrace the Hug, #thefriendshipnft, empowers everyone."
-                        src={'/profile_joele.PNG'}
-                    />
-                    <TeamMember name="Javier" title="Artist" src="/profile_javier.jpg"
-                                bio="Javier Alvarez Freelance graphic designer and Illustrator with more than 7 years of experience, lover of art and innovation, dedicated to constant learning and serving others. He loves challenges and turning his clients' ideas into visible reality. In his spare time Javier enjoys road cycling and adventure trips that enrich his art. Your goal? Change the world one design at a time."/>
-                    {/*<TeamMember name="Abdo" title="Artist"/>*/}
-                    {/*<TeamMember name="Abu" title="Community Manager, Marketing"/>*/}
-                    {/*<TeamMember name="Okechukwu" title="Project Manager"/>*/}
-                </SimpleGrid>
+                <TeamMembers />
             </Section>
 
             <Section withStack pt="2vw">

@@ -12,7 +12,7 @@ import {
   Tag,
   Avatar,
 } from '@chakra-ui/react';
-import NuggetBox from '../components/NuggetBox';
+import NuggetBox from './components/NuggetBox';
 
 export default function TeamMember({
   name = 'Otto Wacht',

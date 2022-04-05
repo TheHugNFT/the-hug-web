@@ -12,8 +12,8 @@ import {
   Tag,
   Wrap,
 } from '@chakra-ui/react';
-import NuggetBox from '../components/NuggetBox';
-import Section from '../components/Section';
+import NuggetBox from './components/NuggetBox';
+import Section from './components/Section';
 import SocialIcons from './SocialIcons';
 
 export default function SiteFooter({}) {
