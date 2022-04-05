@@ -15,7 +15,7 @@ export default function About() {
 
             <Heading size="l" fontSize={'18px'} mb={-2}>
                 Our Cause: Educating and Creating Authentic Community. <br/>
-                Our Mission: To send a Hug to each address on the Polygon network.
+                Our Mission: To send a Hug to each address on the Polygon and Ethereum network.
             </Heading>
 
         </Stack>
@@ -24,10 +24,10 @@ export default function About() {
                 Hugs are symbolic of friendship and love and meet human needs in a variety of ways. Now
                 more than ever, hugs are important. When you give The
                 Hug NFT, you are not only giving a hug but also empowering an
-                individual in crypto financial education.
+                individual.
             </Para>
             <Para>
-                The Hug NFT, #thefriendshipnft, empowers individuals to create a working knowledge
+                The Hug NFT empowers individuals to create a working knowledge
                 base of cryptocurrencies, wallets, blockchains, NFT’s, and DAO’s
                 by sending an NFT Hug on the Polygon network which has
                 minimal gas (transaction) fees while spreading friendship and joy
