@@ -304,7 +304,7 @@ export default function EmbraceHome({Component}) {
                         Polygon network selected and connect with Metamask.
                     </Text>
                     <Text>
-                        3) Click "Contract" -> "Write Contract"
+                        3) Click "Contract" and then "Write Contract"
                     </Text>
                     <Text>
                         4) Connect your metamask wallet
