@@ -6,13 +6,6 @@ import * as React from "react";
 export default function Features() {
     return (
         <SimpleGrid columns={[2, 2, 3]} spacing={2} mt={5} px={2}>
-            {/*<NuggetBox>*/}
-            {/*    <Text fontSize="l">*/}
-            {/*    </Text>*/}
-            {/*</NuggetBox>*/}
-            {/*<NuggetBox>*/}
-
-            {/*</NuggetBox>*/}
             <NuggetBox noCenter>
                 <Text fontSize="l">
                     <Para textAlign={'center'}>
@@ -21,8 +14,6 @@ export default function Features() {
                     <p>
                         1. We’re using Polygon for low gas fees.
                     </p>
-                    {/*<p> 2. We have a unique way of growing our community by using a “share to mint” concept.*/}
-                    {/*</p>*/}
                     <p> 2. Our NFTs are about friendship and sharing.
                     </p>
                     <p>
