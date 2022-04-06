@@ -201,106 +201,11 @@ export default function EmbraceHome() {
                         Get a Hug and give a Hug today
                     </Heading>
                     <Heading size="l" id="buy">
-                        How to add Polygon network to Metamask:
+                        To mint an NFT you can now follow the {' '}
+                        <Link color="blue.500" href="https://the-hug-nft.gitbook.io/the-hug-nft/metamask-school/how-to-mint-an-nft">
+                            instructions on our Gitbook.
+                        </Link>
                     </Heading>
-                    <Text>
-                        Go to <Link color="blue.500"
-                                    href='https://polygonscan.com'
-                                    isExternal>Polygonscan.com</Link> and click the button at the bottom right corner of
-                        page (labeled "Add Polygon Network"):
-                        <Image src="/Add_polygon.PNG" alt="Add Polygon"/>
-                    </Text>
-                    <Heading size="l" id="buy">
-                        Instructions to mint an NFT:
-                    </Heading>
-                    <Text>
-                        1) To mint an NFT go to <Link isExternal color="blue.500"
-                                                      href='https://polygonscan.com/address/0xA234fb0B3B3A79bB425dd929dCcb269cbFc5400D#writeContract'>
-                        PolygonScan
-                    </Link>
-                    </Text>
-                    <Text>
-                        2) The cost is 30 MATIC to mint an NFT. Please make sure you have
-                        Polygon network selected and connect with Metamask.
-                    </Text>
-                    <Text>
-                        3) Click "Contract" and then "Write Contract"
-                    </Text>
-                    <Text>
-                        4) Connect your metamask wallet
-                    </Text>
-                    <Text>
-                        5) Find "mintPairs" function (function number 17) . Enter 30 in the "Payable Amount" box. Enter
-                        1 in the "Number of Pairs". Press Write button
-                    </Text>
-                    <Text>
-                        6) Authorize Metamask transaction
-                    </Text>
-                    <Text>
-                        Once minted, you will see your NFT on Opensea! <Link color="blue.500"
-                                                                             href='https://polygonscan.com/address/0xb383D725d644967B6AF7B32E2908a840CC11d3b5#writeContract'>
-                        PolygonScan
-                    </Link></Text>
-                    {/*<Flex maxWidth={500} p={3}>*/}
-                    {/*    <Box flex={'50%'}>*/}
-                    {/*        <Text>Step 1:</Text>*/}
-                    {/*        <Text>Connect your wallet</Text>*/}
-                    {/*    </Box>*/}
-                    {/*    <Box flex={'50%'}>*/}
-                    {/*        <Button colorScheme="blue" onClick={onConnectWalletHandler}>*/}
-                    {/*            {walletAddress === ''*/}
-                    {/*                ? 'Connect Wallet'*/}
-                    {/*                : walletAddress.slice(0, 6) +*/}
-                    {/*                ' ... ' +*/}
-                    {/*                walletAddress.slice(-4)}*/}
-                    {/*        </Button>*/}
-                    {/*    </Box>*/}
-                    {/*</Flex>*/}
-                    {/*<Box maxWidth={500} px={3}>*/}
-                    {/*    /!*<Button>Connect Your Wallet</Button>*!/*/}
-
-                    {/*    <Flex verticalAlign={'middle'}>*/}
-                    {/*        <Box flex={'50%'}>*/}
-                    {/*            <Text>Step 2:</Text>*/}
-                    {/*            <Text>Choose how many and confirm</Text>*/}
-                    {/*        </Box>*/}
-                    {/*        <Box flex={'50%'}>*/}
-                    {/*            <Wrap>*/}
-                    {/*                <Select*/}
-                    {/*                    variant="outline"*/}
-                    {/*                    mt={2}*/}
-                    {/*                    placeholder={'Number to mint'}*/}
-                    {/*                    value={mintCount}*/}
-                    {/*                    width={100}*/}
-                    {/*                    pr={2}*/}
-                    {/*                    onChange={e => {*/}
-                    {/*                        var i = e.target.value;*/}
-                    {/*                        setMintCount(i);*/}
-                    {/*                    }}*/}
-                    {/*                >*/}
-                    {/*                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i => (*/}
-                    {/*                        <option value={i}>{i}</option>*/}
-                    {/*                    ))}*/}
-                    {/*                </Select>*/}
-                    {/*                <Button colorScheme="blue" mt={2} onClick={buyNFTs}>*/}
-                    {/*                    Mint Now*/}
-                    {/*                </Button>*/}
-                    {/*            </Wrap>*/}
-                    {/*        </Box>*/}
-                    {/*    </Flex>*/}
-                    {/*</Box>*/}
-                    {/*<Heading size="l" id="v2" color={'blue.500'}>*/}
-                    {/*  V2 Presale Whitelist is starting soon. Check back soon and join the*/}
-                    {/*  whitelist, and you could win a free NFT.*/}
-                    {/*</Heading>*/}
-                    {/*<Text>*/}
-                    {/*    V2 NFTs will evolve over time, with backgrounds, clothes, and colors*/}
-                    {/*    changing over time. The AI generation system is also improved, with*/}
-                    {/*    unique traits that are stored on-chain for each NFT. This*/}
-                    {/*    groundbreaking project pushes the boundaries of generative art and*/}
-                    {/*    makes each NFT a one-of-a-kind adventure.*/}
-                    {/*</Text>*/}
-                    {/*<Text>Presale drop is coming very soon! Stay in touch with us.</Text>*/}
                 </Stack>
             </Section>
 
@@ -335,19 +240,17 @@ export default function EmbraceHome() {
                     {[
                         [
                             'How can I purchase my own Hug NFT?',
-                            'You can purchase them on this website for the minting price of ${marketPrice}.  They will also be available on OpenSea.',
+                            'You can follow the minting instructions above.  You can also buy them on Opensea (https://opensea.io/collection/thehugpolygon)',
                         ],
                         [
-                            'How does minting work?  Is it a fair launch?',
-                            `We use an advanced smart contract that randomizes the minting order. Each minting phase/generation
-                consists of a certain number of pieces of art, and the randomization happens on the blockchain, so nobody,
-                not even the owner, knows the order the items will be minted in.  This makes it impossible for anyone
-                to "cherry pick" their favorite artwork.  A provenance hash is also saved on-chain that guarantees that
-                that the artwork cannot be tampered with by the time minting starts.`,
+                            'How does minting work?',
+                            `We are releasing the NFTs in different batches (aka sales).  
+                            The first batch is now available for minting. `,
                         ],
                         [
                             'How many Hug NFTs are there?',
-                            'There will be about 300 V1 NFTs, and there will be about 3000 V2 NFTs.',
+                            `There are 2200 Hug NFTs on the Polygon blockchain.  
+                            In total, eventually, there will be 10,000 across different blockhcains.`,
                         ],
                         [
                             'Which blockchain(s) are Hug NFTs on?',
@@ -366,7 +269,6 @@ export default function EmbraceHome() {
                 {/*    groundbreaking project pushes the boundaries of generative art and*/}
                 {/*    makes each NFT a one-of-a-kind adventure.*/}
                 {/*</Text>*/}
-
                 <Image src="/qrcode_embrace.cards.png" boxSize={'300px'} alt="QR code"/>
 
             </Section>

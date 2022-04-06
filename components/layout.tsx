@@ -10,7 +10,7 @@ import {
 // import HashLinkObserver from 'react-hash-link';
 
 const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'The Hug NFT'
 
 export default function Layout({
   children,
