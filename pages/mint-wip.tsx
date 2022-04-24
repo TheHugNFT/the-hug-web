@@ -21,6 +21,7 @@ import {
 import RadioCard from '../components/radio-card'
 import {GiPerspectiveDiceSixFacesRandom} from 'react-icons/gi'
 import React from "react";
+import MintNumberSlider from "../components/MintNumberSlider";
 
 function StepOneShirt() {
     return (<Box>
@@ -53,10 +54,10 @@ function SelectMintType() {
         <HStack {...group}>
             <RadioCard key={'random'} {...radio1}>
                 <GiPerspectiveDiceSixFacesRandom size={25}/>
-                Random mint.  Let the blockchain determine the fate of your art
+                Random mint.  0.02 Eth. Let the blockchain determine the fate of your art
             </RadioCard>
             <RadioCard key={'custom'} {...radio2}>
-                Custom mint. 0.1 Eth.  Customize certain colors and properties of your Hug.
+                Custom mint. 0.1 Eth. Customize certain colors and properties of your Hug.
             </RadioCard>
 
             {/*{options.map((value) => {*/}
@@ -117,24 +118,27 @@ export default function Home() {
             </Head>
             <HStack>
                 <Box p={4}>
-                    <p>let's mint</p>
-                    <RadioGroup defaultValue='1'>
-                        <Stack spacing={4} direction='row'>
-                            <Radio value='1'>Mint Random - 0.02 Eth</Radio>
-                            <Radio value='1'>Mint Custom - 0.05 Eth</Radio>
-                        </Stack>
-                    </RadioGroup>
-                    <RadioGroup defaultValue='1'>
-                        <Stack spacing={4} direction='row'>
-                            <Radio value='1'>Custom Single NFT</Radio>
-                            <Radio value='1'>Custom Pair</Radio>
-                            <Radio value='1'>Custom Family - starts at 0.05</Radio>
-                        </Stack>
-                    </RadioGroup>
-                    <Multistep activeStep={1} showNavigation={true} steps={steps}/>
+                    <p>Let's mint your Hug NFTs</p>
+
+                    {/*<RadioGroup defaultValue='1'>*/}
+                    {/*    <Stack spacing={4} direction='row'>*/}
+                    {/*        <Radio value='1'>Mint Random - 0.02 Eth</Radio>*/}
+                    {/*        <Radio value='1'>Mint Custom - 0.05 Eth</Radio>*/}
+                    {/*    </Stack>*/}
+                    {/*</RadioGroup>*/}
+                    {/*<RadioGroup defaultValue='1'>*/}
+                    {/*    <Stack spacing={4} direction='row'>*/}
+                    {/*        <Radio value='1'>Custom Single NFT</Radio>*/}
+                    {/*        <Radio value='1'>Custom Pair</Radio>*/}
+                    {/*        <Radio value='1'>Custom Family - starts at 0.05</Radio>*/}
+                    {/*    </Stack>*/}
+                    {/*</RadioGroup>*/}
+                    {/*<Multistep activeStep={1} showNavigation={true} steps={steps}/>*/}
 
                     <SelectMintType />
 
+                    <MintNumberSlider />
+                    
                     <Button>I'm Feeling Lucky</Button>
 
                     <Accordion allowToggle>
