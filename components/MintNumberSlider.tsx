@@ -20,8 +20,8 @@ export default function MintNumberSlider() {
             max={20}
             colorScheme='teal'
             onChange={(v) => setSliderValue(v)}
-            onMouseEnter={() => setShowTooltip(true)}
-            onMouseLeave={() => setShowTooltip(false)}
+            onChangeStart={() => setShowTooltip(true)}
+            onChangeEnd={() => setShowTooltip(false)}
 
         >
             <SliderMark value={0} mt='1' ml='-2.5' fontSize='sm'>
@@ -40,8 +40,9 @@ export default function MintNumberSlider() {
                 placement='top'
                 isOpen={showTooltip}
                 label={<Box>
-                    Mint price:
-                    Foo:
+                    <Box>{sliderValue} NFTs</Box>
+                    <Box>Price per NFT: 0.01</Box>
+                    <Box>Customizable traits: 4</Box>
                 </Box>}
             >
                 <SliderThumb />

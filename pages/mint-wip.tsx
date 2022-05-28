@@ -9,7 +9,7 @@ import EmbraceHome from '../website-config/EmbraceHome'
 import {SketchPicker} from 'react-color';
 import ColorPicker from "../components/color-picker";
 import {Radio, RadioGroup} from "@chakra-ui/radio";
-import {Box, Flex, Button, Stack, Text, useRadioGroup, HStack} from "@chakra-ui/react";
+import {Box, Flex, Button, Stack, Text, useRadioGroup, HStack, Heading} from "@chakra-ui/react";
 import Multistep from '../components/multistep'
 import {
     Accordion,
@@ -22,6 +22,16 @@ import RadioCard from '../components/radio-card'
 import {GiPerspectiveDiceSixFacesRandom} from 'react-icons/gi'
 import React from "react";
 import MintNumberSlider from "../components/MintNumberSlider";
+import RadioCards from "../components/radio-cards";
+
+function MintUIBox({title, children}) {
+    return (<Box mb={4}>
+        <Flex alignItems={'center'} mb={2}>
+            <Text mr={2}>{title}</Text>
+        </Flex>
+        {children}
+    </Box>)
+}
 
 function StepOneShirt() {
     return (<Box>
@@ -54,7 +64,7 @@ function SelectMintType() {
         <HStack {...group}>
             <RadioCard key={'random'} {...radio1}>
                 <GiPerspectiveDiceSixFacesRandom size={25}/>
-                Random mint.  0.02 Eth. Let the blockchain determine the fate of your art
+                Random mint. 0.02 Eth. Let the blockchain determine the fate of your art
             </RadioCard>
             <RadioCard key={'custom'} {...radio2}>
                 Custom mint. 0.1 Eth. Customize certain colors and properties of your Hug.
@@ -73,7 +83,7 @@ function SelectMintType() {
 }
 
 function CustomizeBackground() {
-    const options = ['Plain', 'Abstract', 'Landscape Day', 'Landscape Night']
+    const options = ['Plain', 'Abstract', 'Landscape Day', 'Landscape Night', 'House One', 'House Two',]
 
     const {getRootProps, getRadioProps} = useRadioGroup({
         name: 'framework',
@@ -102,10 +112,16 @@ function CustomizeBackground() {
     </Box>)
 }
 
+function SpecialElements() {
+
+    let options = ["Rose", 'Earring', 'Barbell', 'Ring']
+    return (<RadioCards options={options}/>)
+}
+
 
 const steps = [
-    {name: 'Shirt', component: <StepOneShirt/>},
-    {name: 'Bottom', component: null},
+    // {name: 'Shirt', component: <StepOneShirt/>},
+    // {name: 'Bottom', component: null},
     {name: 'Watch', component: null},
     {name: 'Background', component: <CustomizeBackground/>}
 ];
@@ -118,7 +134,7 @@ export default function Home() {
             </Head>
             <HStack>
                 <Box p={4}>
-                    <p>Let's mint your Hug NFTs</p>
+                    <Heading>Let's mint Hug NFTs</Heading>
 
                     {/*<RadioGroup defaultValue='1'>*/}
                     {/*    <Stack spacing={4} direction='row'>*/}
@@ -135,40 +151,50 @@ export default function Home() {
                     {/*</RadioGroup>*/}
                     {/*<Multistep activeStep={1} showNavigation={true} steps={steps}/>*/}
 
-                    <SelectMintType />
+                    <MintUIBox title={'1. Random or Custom'}>
+                        <SelectMintType/>
+                    </MintUIBox>
 
-                    <MintNumberSlider />
-                    
-                    <Button>I'm Feeling Lucky</Button>
+                    <MintUIBox title={'2. Shirt Colors'}>
+                        <StepOneShirt/>
+                    </MintUIBox>
 
-                    <Accordion allowToggle>
-                        {steps.map(step => {
-                            return (
-                                <AccordionItem>
-                                    <h2>
-                                        <AccordionButton>
-                                            <Box flex='1' textAlign='left'>
-                                                Customize {step.name}
-                                            </Box>
-                                            <AccordionIcon/>
-                                        </AccordionButton>
-                                    </h2>
-                                    <AccordionPanel pb={4}>
-                                        {step.component}
-                                    </AccordionPanel>
-                                </AccordionItem>
-                            )
-                        })}
-                    </Accordion>
+                    {/*<MintUIBox title={'2. Number to Mint'}>*/}
+                    {/*    <MintNumberSlider/>*/}
+                    {/*</MintUIBox>*/}
+
+                    <MintUIBox title={'3. Optional Customizations'}>
+                        <Button>I'm Feeling Lucky</Button>
+                        <Text>(Generate some random features that you can tweak)</Text>
+                        <Accordion allowToggle>
+                            {steps.map(step => {
+                                return (
+                                    <AccordionItem>
+                                        <h2>
+                                            <AccordionButton>
+                                                <Box flex='1' textAlign='left'>
+                                                    Customize {step.name}
+                                                </Box>
+                                                <AccordionIcon/>
+                                            </AccordionButton>
+                                        </h2>
+                                        <AccordionPanel pb={4}>
+                                            {step.component}
+                                        </AccordionPanel>
+                                    </AccordionItem>
+                                )
+                            })}
+                        </Accordion>
+                    </MintUIBox>
 
                     <Button>Mint Random Now</Button>
                     <Button>Customize</Button>
                 </Box>
 
-                <iframe src="/api/art" width={'1000'} height={'500'}></iframe>
+
+                <iframe src="/api/art?seed=550852CEC79D393F28BE46820F5564263D64A2D561B533B81DDE6B17CD2F18EC" width={'1000'} height={'500'}></iframe>
 
             </HStack>
-
 
 
         </Layout>
