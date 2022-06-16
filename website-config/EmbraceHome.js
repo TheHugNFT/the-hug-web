@@ -198,7 +198,7 @@ export default function EmbraceHome() {
             <Section>
                 <Stack {...spacingStack} pt="2vw">
                     <Heading size="xl" id="roadmap">
-                        Get a Hug and give a Hug today
+                        Hug and the world hugs with you
                     </Heading>
                     <Heading size="l" id="buy">
                         To mint an NFT you can now follow the {' '}
@@ -216,13 +216,12 @@ export default function EmbraceHome() {
                 </Heading>
                 <CheckList>
                     {[
-                        'BOGO (Buy One Get One) offer - LIVE NOW  🎉',
-                        '10% Sold.  Grand Opening Party.',
-                        '20% Sold.  Art contest. Art from winners will be featured in next generation mint.',
-                        '50% Sold.  Prints, T-shirts, Mugs, Wall Art.  We will randomly pick 1% of NFT owners and send you a print, t-shirt, or mug with your NFT art.',
-                        '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.',
-                        // '90% Sold. ??',
-                        // '100% Sold out. ??',
+                        'BOGO (Buy One Get One to hug a friend with) offer - LIVE MINT coming soon.',
+                        '50% Sold.  T-shirts and other merch including Mugs, Wall Art.  We will randomly pick 25% of NFT owners and send you a print, t-shirt, or mug.',
+                        '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.
+                        // '100% Sold out. Hug Celebration Party.
+                     'Other perks include access to IRL hugging events, surprise drops, and special discounts'
+                     
                     ]}
                 </CheckList>
                 {/*</Stack>*/}
@@ -240,23 +239,16 @@ export default function EmbraceHome() {
                     {[
                         [
                             'How can I purchase my own Hug NFT?',
-                            'You can follow the minting instructions above.  You can also buy them on Opensea (https://opensea.io/collection/thehugpolygon)',
+                            'Sign up on the Pre-Sale list',
                         ],
                         [
                             'How does minting work?',
-                            `We are releasing the NFTs in different batches (aka sales).  
-                            The first batch is now available for minting. `,
-                        ],
-                        [
-                            'How many Hug NFTs are there?',
-                            `There are 2200 Hug NFTs on the Polygon blockchain.  
-                            In total, eventually, there will be 10,000 across different blockhcains.`,
-                        ],
-                        [
+                            `We are releasing a mint date soon`,
+
                             'Which blockchain(s) are Hug NFTs on?',
-                            `We are starting on Polygon. We want to support the lowering of gas costs and 
+                            `We started on Polygon to support the lowering of gas costs and 
               environmental impact of Ethereum/Proof-of-work until the more environmental transition 
-              to PoS is made. We will launch V2 on Ethereum and probably another blockchain.  Why?  
+              to PoS is made. We will launch on Ethereum in July 2022.  Why?  
               Because love and friendship has no network boundaries!`,
                         ],
                     ]}
