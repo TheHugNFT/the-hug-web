@@ -33,7 +33,7 @@ export default function TeamMembers() {
                     name="Jolie"
                     title="Co-Creator and Marketing"
                     // I learned how to drive on a manual transmission.
-                    bio={bios.joele}
+                    bio={bios.jolie}
                     src={'/profile_joele.PNG'}
                 />
                 <TeamMember name="Javier" title="Artist" src="/profile_javier.jpg"
