@@ -39,7 +39,7 @@ export default function Features() {
                     <Para>
                         <b>Sending love on-chain</b>
                     </Para>
-                    Remember the joy of receiving a friendship card in the mail? The
+                    Remember the joy of receiving a card in the mail? The
                     Hug NFT strives to bring this same experience to the web 3.0
                 </Text>
             </NuggetBox>
