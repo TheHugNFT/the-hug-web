@@ -15,7 +15,7 @@ export default function About() {
 
             <Heading size="l" fontSize={'18px'} pb={3}>
                 Our Cause: Creating connection around the world with art inspiring people to be aunthetic. <br/>
-                Our Mission: To Hug to each address on the Ethereum network.
+                Our Mission: Hug each address on the Ethereum network.
             </Heading>
             <Para fontSize="l">
                 Hugs are symbolic of friendship and love and meet human needs in a variety of ways. Now
