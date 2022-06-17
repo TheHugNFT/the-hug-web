@@ -26,7 +26,7 @@ export default function About() {
             </Para>
             <Para>
                 Hugs connect the world.
-           
+            </Para>
 
         </Text>
 
