@@ -141,11 +141,11 @@ export default function EmbraceHome() {
                         <Link href="#roadmap">Roadmap</Link>
                         <Link href="#team">Team</Link>
                         <Link href="#faq">FAQ</Link>
-                        <Link
-                            href="https://docs.google.com/presentation/d/1YI7eeHGI18l3_tRSQWBe05CkWkqVmtxmv5UwcSchgKo/edit?usp=sharing"
-                            isExternal>
-                            <Text fontSize='sm' as='span'>The HUG NFT Presentation <FaExternalLinkAlt/></Text>
-                        </Link>
+                        {/*<Link*/}
+                        {/*    href="https://docs.google.com/presentation/d/1YI7eeHGI18l3_tRSQWBe05CkWkqVmtxmv5UwcSchgKo/edit?usp=sharing"*/}
+                        {/*    isExternal>*/}
+                        {/*    <Text fontSize='sm' as='span'>The HUG NFT Presentation <FaExternalLinkAlt/></Text>*/}
+                        {/*</Link>*/}
                     </Wrap>
                     <Flex justify="space-between" verticalAlign="center">
                         <SocialIcons size={30}/>
@@ -195,19 +195,16 @@ export default function EmbraceHome() {
                <Features />
             </Section>
 
-            <Section>
-                <Stack {...spacingStack} pt="2vw">
-                    <Heading size="xl" id="roadmap">
-                        Hug and the world hugs with you
-                    </Heading>
-                    <Heading size="l" id="buy">
-                        To mint an NFT you can now follow the {' '}
-                        <Link color="blue.500" href="https://the-hug-nft.gitbook.io/the-hug-nft/metamask-school/how-to-mint-an-nft">
-                            instructions on our Gitbook.
-                        </Link>
-                    </Heading>
-                </Stack>
-            </Section>
+            {/*<Section>*/}
+            {/*    <Stack {...spacingStack} pt="2vw">*/}
+            {/*        <Heading size="l" id="buy">*/}
+            {/*            To mint an NFT you can now follow the {' '}*/}
+            {/*            <Link color="blue.500" href="https://the-hug-nft.gitbook.io/the-hug-nft/metamask-school/how-to-mint-an-nft">*/}
+            {/*                instructions on our Gitbook.*/}
+            {/*            </Link>*/}
+            {/*        </Heading>*/}
+            {/*    </Stack>*/}
+            {/*</Section>*/}
 
             <Section withStack pt="2vw">
                 {/*<Stack {...spacingStack} pt="2vw">*/}
@@ -216,13 +213,12 @@ export default function EmbraceHome() {
                 </Heading>
                 <CheckList>
                     {[
-                        'BOGO (Buy One Get One to hug a friend with) offer - LIVE MINT coming soon.', 
-                        'The roadmap is still evolving in this ever changing web3 landscape.'
+                        'BOGO (Buy One Get One to hug a friend with) offer - LIVE MINT coming soon.',
+                        'The roadmap is still evolving in this ever changing web3 landscape.',
                         '50% Sold.  T-shirts and other merch including Mugs, Wall Art.  We will randomly pick 25% of NFT owners and send you a print, t-shirt, or mug.',
                         '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.',
                         // '100% Sold out. Hug Celebration Party.
-                     'Other perks include access to IRL hugging events, surprise drops, and special discounts. At least 10% of the profits will be set upto help other artists launch their web 3 projects.
-                     '
+                     'Other perks include access to IRL hugging events, surprise drops, and special discounts. At least 10% of the profits will be set upto help other artists launch their web 3 projects.'
 
                     ]}
                 </CheckList>
