@@ -22,7 +22,7 @@ export default function SocialIcons({ size }) {
         style={{ width: size, height: size }}
       />
       <SocialIcon
-        url="tiktok.com/@thehugnft"
+        url="https://tiktok.com/@thehugnft"
         style={{ width: size, height: size }}
       />
     </Wrap>
