@@ -10,32 +10,23 @@ export default function About() {
             <Image src={'/TheHugNFTlogo.png'} maxWidth={'400'} alignSelf="center"/>
 
             <Heading size="l" fontSize={'24px'} pb={2} pt={-4}>
-                The Friendship NFT. Buy one and get a free one to send to a friend.
+                The HUG NFT: Creating a world with more love, 1 hug at a time. Buy one hug and get a free mint to send to a friend.
             </Heading>
 
             <Heading size="l" fontSize={'18px'} mb={-2}>
-                Our Cause: Educating and Creating Authentic Community. <br/>
-                Our Mission: To send a Hug to each address on the Polygon and Ethereum network.
+                Our Cause: Creating connection around the world with art inspiring people to be aunthetic. <br/>
+                Our Mission: To Hug to each address on the Ethereum network.
             </Heading>
 
         </Stack>
         <Text fontSize="l" mt="-5px">
             <Para fontSize="l">
                 Hugs are symbolic of friendship and love and meet human needs in a variety of ways. Now
-                more than ever, hugs are important. When you give The
-                Hug NFT, you are not only giving a hug but also empowering an
-                individual.
+                more than ever, hugs are important. When you buy The HUG NFT, you are hugging a friend on the blockchain.
             </Para>
             <Para>
-                The Hug NFT empowers individuals to create a working knowledge
-                base of cryptocurrencies, wallets, blockchains, NFT’s, and DAO’s
-                by sending an NFT Hug on the Polygon network which has
-                minimal gas (transaction) fees while spreading friendship and joy
-                via a blockchain hug.
-            </Para>
-            {/*<Para>*/}
-            {/*    Wow… That’s a mouthful. You will create your very own hug nft and one for a friend.*/}
-            {/*</Para>*/}
+                Hugs connect the world.
+           
 
         </Text>
 
