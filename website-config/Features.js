@@ -11,13 +11,10 @@ export default function Features() {
                     <Para textAlign={'center'}>
                         <b>What makes our project different:</b>
                     </Para>
-                    <p>
-                        1. We’re using Polygon for low gas fees.
-                    </p>
-                    <p> 2. Our NFTs are about friendship and sharing.
+                    <p> 1. Our NFTs are about friendship and sharing.
                     </p>
                     <p>
-                        3. Our NFTs will change over time, kind of like a chronicle of the journey of two
+                        2. Our NFTs will change over time, kind of like a chronicle of the journey of two
                         friends.
                     </p>
                 </Text>
