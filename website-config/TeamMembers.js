@@ -7,7 +7,7 @@ const bios = {
            I have 20 years experience building apps, websites, and crypto stuff, 
            and helping companies implement innovative software and technology solutions`,
     jolie: `I create connection for others. Not only do I connect teenagers with Science and Math, 
-            my favorite subjects, I connect humans with hugging and humans with web3.`
+            my favorite subjects, I connect humans with hugging and humans with web3.`,
     javier: `Javier Alvarez Freelance graphic designer and Illustrator with more than 7 years 
             of experience, lover of art and innovation, dedicated to constant learning and 
             serving others. He loves challenges and turning his clients' ideas into visible reality. 
