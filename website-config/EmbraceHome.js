@@ -209,12 +209,12 @@ export default function EmbraceHome() {
             <Section withStack pt="2vw">
                 {/*<Stack {...spacingStack} pt="2vw">*/}
                 <Heading size="xl" id="roadmap">
-                    Roadmap
+                    Roadmap:'The roadmap is still evolving in this ever changing web3 landscape.',
                 </Heading>
                 <CheckList>
                     {[
                         'BOGO (Buy One Get One to hug a friend with) offer - LIVE MINT coming soon.',
-                        'The roadmap is still evolving in this ever changing web3 landscape.',
+                        
                         '50% Sold.  T-shirts and other merch including Mugs, Wall Art.  We will randomly pick 25% of NFT owners and send you a print, t-shirt, or mug.',
                         '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.',
                         // '100% Sold out. Hug Celebration Party.
