@@ -151,6 +151,11 @@ export default function EmbraceHome() {
                     <Flex justify="space-between" verticalAlign="center">
                         <SocialIcons size={30}/>
                     </Flex>
+                    <Button>
+                        <Link isExternal href={'https://docs.google.com/forms/d/e/1FAIpQLSdSWvKfJsCfdBOJQGc0HxWE26TzewD2mp40FqPpQrZUNUOsaQ/viewform'}>
+                            Mint The Hug NFT
+                        </Link>
+                    </Button>
                     <Flex>
                         {/*<Button onClick={onConnectWalletHandler}>*/}
                         {/*  {walletAddress === ''*/}
