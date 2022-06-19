@@ -22,7 +22,7 @@ export default function TeamMembers() {
             <Heading size="xl" id="team">
                 Team
             </Heading>
-            <SimpleGrid columns={[2, null, 3]} spacing={5}>
+            <SimpleGrid columns={[1, 2, 3]} spacing={5}>
                 <TeamMember
                     name="Otto"
                     title="Co-Creator and Developer"

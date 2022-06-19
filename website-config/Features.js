@@ -5,7 +5,7 @@ import * as React from "react";
 
 export default function Features() {
     return (
-        <SimpleGrid columns={[2, 2, 3]} spacing={2} mt={5} px={2}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={2} mt={5} px={2}>
             <NuggetBox noCenter>
                 <Text fontSize="l">
                     <Para textAlign={'center'}>

@@ -7,7 +7,7 @@ export default function About() {
     return (<Stack {...spacingStack} flex={'70%'} minWidth={'300px'} pl={2}>
         <Stack textAlign={'center'} alignSelf="center" maxWidth={'600px'}>
 
-            <Image src={'/TheHugNFTlogo.png'} maxWidth={'400'} alignSelf="center"/>
+            <Image src={'/TheHugNFTlogo.png'} maxWidth={'300'} alignSelf="center"/>
 
             <Heading size="l" fontSize={'24px'} pb={2} pt={-4}>
                 The HUG NFT: Creating a world with more love, one hug at a time. Buy one hug and get a free mint to send to a friend.

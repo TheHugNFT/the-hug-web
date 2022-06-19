@@ -136,17 +136,18 @@ export default function EmbraceHome() {
         >
             <Section noMarginY>
                 <Flex justify="space-between">
-                    <Wrap spacing="10" fontSize="lg">
-                        <Link href="#buy">Buy</Link>
-                        <Link href="#roadmap">Roadmap</Link>
-                        <Link href="#team">Team</Link>
-                        <Link href="#faq">FAQ</Link>
+                    {/*<Wrap spacing="10" fontSize="lg">*/}
+                    {/*    <Link href="#buy">Buy</Link>*/}
+                    {/*    <Link href="#roadmap">Roadmap</Link>*/}
+                    {/*    <Link href="#team">Team</Link>*/}
+                    {/*    <Link href="#faq">FAQ</Link>*/}
+
                         {/*<Link*/}
                         {/*    href="https://docs.google.com/presentation/d/1YI7eeHGI18l3_tRSQWBe05CkWkqVmtxmv5UwcSchgKo/edit?usp=sharing"*/}
                         {/*    isExternal>*/}
                         {/*    <Text fontSize='sm' as='span'>The HUG NFT Presentation <FaExternalLinkAlt/></Text>*/}
                         {/*</Link>*/}
-                    </Wrap>
+                    {/*</Wrap>*/}
                     <Flex justify="space-between" verticalAlign="center">
                         <SocialIcons size={30}/>
                     </Flex>
@@ -209,14 +210,18 @@ export default function EmbraceHome() {
             <Section withStack pt="2vw">
                 {/*<Stack {...spacingStack} pt="2vw">*/}
                 <Heading size="xl" id="roadmap">
-                    Roadmap:'The roadmap is still evolving in this ever changing web3 landscape.',
+                    Roadmap
+                    <Text fontSize="lg">
+                        The roadmap is still evolving in this ever changing web3 landscape.
+                    </Text>
                 </Heading>
                 <CheckList>
                     {[
-                        'BOGO (Buy One Get One to hug a friend with) offer - LIVE MINT coming soon.',
-                        
-                        '50% Sold.  T-shirts and other merch including Mugs, Wall Art.  We will randomly pick 25% of NFT owners and send you a print, t-shirt, or mug.',
-                        '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.',
+                        'BOGO (Buy One Get One to hug a friend with) - LIVE MINT coming soon.',
+
+                        '50% Sold.  T-shirts and other merch including Mugs, Wall Art.',
+                        '100% Sold.   Celebration party 🎉',
+                        // '70% Sold.  Epic NFT messaging feature rolled out.  You will be able to send your NFT to a friend, or send them a greeting via message, link, or email, featuring your NFT art.',
                         // '100% Sold out. Hug Celebration Party.
                      'Other perks include access to IRL hugging events, surprise drops, and special discounts. At least 10% of the profits will be set upto help other artists launch their web 3 projects.'
 
