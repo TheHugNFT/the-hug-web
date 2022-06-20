@@ -18,7 +18,7 @@ export default function About() {
                 Our Mission: Hug each address on the Ethereum network.
             </Heading>
             <Para fontSize="l">
-                The Hug Nft is a generative collection of art of humans hugging, inclusive of the full spectrum
+                The Hug NFT is a generative collection of art of humans hugging, inclusive of the full spectrum
                 of human diversity. The skin color,
                 clothing style, and backgrounds are blockchain generative traits.  When you mint one, you get a set of
                 two that are similar except for the background.  Then you send one to a friend to hug them.
