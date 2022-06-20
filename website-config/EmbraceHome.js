@@ -269,7 +269,7 @@ export default function EmbraceHome() {
                 {/*    groundbreaking project pushes the boundaries of generative art and*/}
                 {/*    makes each NFT a one-of-a-kind adventure.*/}
                 {/*</Text>*/}
-                <Image src="/qrcode_embrace.cards.png" boxSize={'300px'} alt="QR code"/>
+                <Image src="/qrcode_thehugnft.com.png" boxSize={'300px'} alt="QR code"/>
 
             </Section>
 
