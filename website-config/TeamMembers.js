@@ -15,7 +15,7 @@ const bios = {
     irina: `I’m a ‘juicy life’ coach.  J.U.I.C.Y? Joyful, Unapologetic, Inspiring, Creatively 
     successful and Yummy! I help my clients to bring joyful balance and crystal clear clarity in 
     their relationships with themselves and their loved ones  to reach emotional stability and 
-    professional growth.`
+    professional growth.`,
     // jolie: `I create connection for others. Not only do I connect teenagers with Science and Math,
     //         my favorite subjects, I connect humans with hugging and humans with web3.`,
     javier: `Javier Alvarez Freelance graphic designer and Illustrator with more than 7 years 

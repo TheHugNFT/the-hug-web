@@ -217,7 +217,8 @@ export default function EmbraceHome() {
                 <Heading size="xl" id="roadmap">
                     Roadmap
                     <Text fontSize="lg">
-                        The roadmap is still evolving in this ever changing web3 landscape.
+                        The roadmap is still evolving in this ever changing web3 landscape and
+                        will be published after NFTNYC.  Stay tuned.
                     </Text>
                 </Heading>
                 <CheckList>
