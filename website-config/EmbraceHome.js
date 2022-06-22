@@ -123,7 +123,7 @@ export default function EmbraceHome() {
     const buyNFTs = async () => {
         const {_, status} = await mintNFT(
             walletAddress,
-            mintCount,
+            1,
             setMintLoading,
             setNewMint
         );
@@ -157,17 +157,14 @@ export default function EmbraceHome() {
                         </Link>
                     </Button>
                     <Flex>
-                        {/*<Button onClick={onConnectWalletHandler}>*/}
-                        {/*  {walletAddress === ''*/}
-                        {/*    ? 'Connect Wallet'*/}
-                        {/*    : walletAddress.slice(0, 6) + ' ... ' + walletAddress.slice(-4)}*/}
-                        {/*</Button>*/}
                         <ColorModeSwitcher/>
                     </Flex>
                 </Flex>
             </Section>
 
             <Section>
+
+
                 {/*<SimpleGrid columns={[1, null, 2]} gap={1}>*/}
                 {/*<SimpleGrid minChildWidth="200px" gap={1}>*/}
                 <Flex wrap={'wrap'}>
@@ -186,6 +183,24 @@ export default function EmbraceHome() {
 
                     <About />
 
+                </Flex>
+            </Section>
+
+            <Section textAlign={'center'}>
+                <Heading size="xl" id="roadmap">
+                    Mint Two Hugs on Polygon for 1 MATIC
+                </Heading>
+                <Flex direction={'column'} sx={'margin: auto'} textAlign={'center'}>
+                    <Stack pt={5}>
+                        <Button onClick={onConnectWalletHandler} >
+                            {walletAddress === ''
+                                ? 'Connect Wallet'
+                                : walletAddress.slice(0, 6) + ' ... ' + walletAddress.slice(-4)}
+                        </Button>
+                        <Button colorScheme="blue" mt={2} onClick={buyNFTs}>
+                            Mint NFT Pair
+                        </Button>
+                    </Stack>
                 </Flex>
             </Section>
 

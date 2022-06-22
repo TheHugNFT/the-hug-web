@@ -5,7 +5,8 @@ import contractABI from '../abis/TheHug.json';
 // const CONTRACT_ADDRESS = '0x2e89b24E590CE3edBCC98342E865c697d60C6FDD';
 // const CONTRACT_ADDRESS = '0x1C253C2Ab9e9C1AeA607ac3357Fe70d8318E0F5E';
 // const CONTRACT_ADDRESS = '0x7dacba8471d6e7da76d3e620e6b6a1242ca54c00';
-const CONTRACT_ADDRESS = '0x77873fcaf963c620cb0185efe8138b128a4159df';
+// const CONTRACT_ADDRESS = '0x77873fcaf963c620cb0185efe8138b128a4159df';
+const CONTRACT_ADDRESS = '0xA234fb0B3B3A79bB425dd929dCcb269cbFc5400D';
 
 // Contract can be used to write Contract
 export const getContractWithSigner = () => {

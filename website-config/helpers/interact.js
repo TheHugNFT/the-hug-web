@@ -21,10 +21,10 @@ export const mintNFT = async (
     // let val = ethers.BigNumber.from(2e12).mul(
     //   ethers.BigNumber.from(1e9).mul(1).div(100).mul(count)
     // );
-    let val = ethers.BigNumber.from('40000000000000000000').mul(count); //.03 matic
+    let val = ethers.BigNumber.from('1000000000000000000').mul(count); //.03 matic
     // let val = ethers.BigNumber.from(2e19).mul(count); //30 matic
     console.log('val ', val);
-    let txhash = await contract.mint(count, {
+    let txhash = await contract.mintPairs(1, {
       // value: ethers.BigNumber.from('200000000000000000').mul(count),
       value: val,
       from: walletAddress,
