@@ -20,10 +20,10 @@ export default function About() {
             <Para fontSize="l" pb={5}>
                 The HUG NFT is a grass roots NFT that started in Venice, CA. The HUG NFT is about human connection IRL and on the block chain.
                 Want a hug?
-                We believe that connection is more important than ever. 
-                CURRENTLY, we are building community. We felt isolated and alone during covid and created The HUG NFT.  We are still putting the pieces together.
-                We are announcing our discord on July 7th!!! And updating our roadmap after NYC NFT. We are also updating our hug trait descriptors.
-                Please sign up for our twitter and mint list and check out our Tik Tok. The links are in the link tree.  Help us spread the love. 
+                We believe that connection is more important than ever. We felt isolated and alone during covid and created The HUG NFT.
+                CURRENTLY, we are building community.   
+                We are announcing our discord on July 7th!!! And updating our roadmap after NYC NFT.  We are also updating our hug trait descriptors.
+                Please sign up for our twitter and mint list and check out our Tik Tok. The links are in the link tree.
                 
                 The HUG NFT is a generative collection of art of humans hugging, 
                 inclusive of the full spectrum
@@ -38,8 +38,8 @@ export default function About() {
             <Para fontSize="l">
                 Jolie has been on a lifelong  journey of belonging through  hugging and human connection.
                 She has always felt more connected and joyful after hugging starting as a young girl.
-                She took a meditation course and learned about social capital and how hugging and human connection
-                egulate emotions.  She met Otto at a 3 day authentic relating retreat where there was
+                She took a meditation course about social capital, hugging, human connection
+                regulate emotions.  She met Otto at a 3 day authentic relating retreat where there was
                 a lot of hugging and human connection.  Jolie was introduced to web3 after she was
                 day trading stocks that were ‘mining’ and began
                 researching mining and blockchains.  Jolie co-created The HUG NFT to inspire that same feeling
