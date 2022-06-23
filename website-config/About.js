@@ -21,18 +21,17 @@ export default function About() {
                 The HUG NFT is a grass roots NFT that started in Venice, CA. The HUG NFT is about human connection IRL and on the block chain.
                 Want a hug?
                 We believe that connection is more important than ever. 
-                CURRENTLY, we are building community. We felt isolated and alone during covid. We are still putting the pieces together.
+                CURRENTLY, we are building community. We felt isolated and alone during covid and created The HUG NFT.  We are still putting the pieces together.
                 We are announcing our discord on July 7th!!! And updating our roadmap after NYC NFT. We are also updating our hug trait descriptors.
-                Please sign up for our twitter and mint list.  Help us spread the love. 
+                Please sign up for our twitter and mint list and check out our Tik Tok. The links are in the link tree.  Help us spread the love. 
                 
                 The HUG NFT is a generative collection of art of humans hugging, 
                 inclusive of the full spectrum
                 of human diversity. The skin color,
                 clothing style, and backgrounds are blockchain generative traits.  When you mint one, you get a set of
-                two that are similar except for the background.  Then you send one to a friend to hug them.
-                We co-created The HUG NFT to inspire that same feeling that IRL hugging makes.
-                We felt that some of the NFT space was about money and we want some of the space to be
-                about human connection.  In addition, we host IRL events for hugging.
+                two, one for you and one to hug a friend with. 
+                We co-created The HUG NFT to inspire that same feeling that IRL hugging makes. 
+                 In addition, we host IRL events for hugging.
             <Heading size="m" fontSize={'18px'} pb={1}>
                 Jolie's Hug Story
             </Heading>
