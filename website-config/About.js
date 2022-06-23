@@ -21,7 +21,9 @@ export default function About() {
                 The HUG NFT is a grass roots NFT that started in Venice, CA. The HUG NFT is about human connection IRL and on the block chain.
                 Want a hug?
                 We believe that connection is more important than ever. 
-               CURRENTLY, we are building community. We felt isolated and alone during covid.   looking to build The HUG NFT is a generative collection of art of humans hugging, inclusive of the full spectrum
+                CURRENTLY, we are building community. We felt isolated and alone during covid. We are still putting the pieces together.
+                We are announcing our discord on July 7th!!!  The HUG NFT is a generative collection of art of humans hugging, 
+                inclusive of the full spectrum
                 of human diversity. The skin color,
                 clothing style, and backgrounds are blockchain generative traits.  When you mint one, you get a set of
                 two that are similar except for the background.  Then you send one to a friend to hug them.
